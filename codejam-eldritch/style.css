@@ -33,6 +33,7 @@ body {
     flex-direction: column;
     margin: auto;
     margin-top: 3%;
+    border: 1px solid #502a00;
 }
 
 .header {
@@ -128,6 +129,11 @@ body {
     width: 36px;
     height: 36px;
     border-radius: 100%;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-shadow: 1px 0 #000, -1px 0 #000, 0 1px #000, 0 -1px #000, 1px 1px #000, -1px -1px #000, 1px -1px #000, 1px 0px #000;
 }
 
 .green {
@@ -140,6 +146,13 @@ body {
 
 .blue {
     background-color: rgba(16, 16, 96, 84%);
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .deck-container .deck,
