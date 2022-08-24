@@ -131,15 +131,15 @@ body {
 }
 
 .green {
-    background-color: rgb(5, 101, 5);
+    background-color: rgba(46, 117, 46, 84%);
 }
 
 .brown {
-    background-color: rgb(93, 56, 14);
+    background-color: rgba(124, 68, 3, 84%);
 }
 
 .blue {
-    background-color: rgb(2, 2, 137);
+    background-color: rgba(16, 16, 96, 84%);
 }
 
 .deck-container .deck,
