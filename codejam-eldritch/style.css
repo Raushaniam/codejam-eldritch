@@ -1,0 +1,168 @@
+@font-face {
+    font-family: 'Arial-MT';
+    src: url("./assets/fonts/Arial-MT.woff");
+    /* Путь к файлу со шрифтом */
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-width: 480px;
+    height: auto;
+    font-family: 'Arial', sans-serif;
+    font-size: 20px;
+    color: #000000;
+    text-align: center;
+    background-image: url('./assets/img/HorrorCollage.jpg');
+    background-position: center;
+    background-size: cover;
+    font-weight: 600;
+}
+
+.wrapper {
+    background-color: rgba(255, 255, 255, 0.7);
+    height: 90%;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: auto;
+    margin-top: 3%;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    /* height: 30vh; */
+    /* min-height: 220px;   */
+    padding: 20px;
+}
+
+.main {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    /* height: 40vh; */
+    /* min-height: 260px;   */
+    gap: 20px;;
+}
+
+.ancients-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.ancient {
+    background-image: url(./assets/png/Azathoth.png);
+    min-width: 283px;
+    min-height: 365px;
+    background-position: center;
+    background-size: cover;
+    border: 2px solid rgba(213, 120, 0, 1);
+}
+
+.level-container {
+    display: flex;
+    justify-content: center;
+}
+
+.level {
+    display: none;
+}
+
+.active {
+    display: block;
+    border: 2px solid rgba(213, 120, 0, 1);
+    padding: 6px;
+}
+
+.deck-container {
+    display: none;
+}
+
+.deck-container-active {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+}
+
+.current-state {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.stage-container {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.stage-text {
+    color: rgb(88, 1, 1);
+}
+
+.dots-container {
+    align-items: center;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.dot {
+    width: 36px;
+    height: 36px;
+    border-radius: 100%;
+}
+
+.green {
+    background-color: rgb(5, 101, 5);
+}
+
+.brown {
+    background-color: rgb(93, 56, 14);
+}
+
+.blue {
+    background-color: rgb(2, 2, 137);
+}
+
+.deck-container .deck,
+.deck-container .last-card {
+    background-size: cover;
+    /* height: 190px;
+    width: 130px; */
+}
+
+.deck-container .deck,
+.deck-container .last-card {
+    background-size: cover;
+    /* height: 190px;
+    width: 130px; */
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    /* height: 30vh; */
+    /* min-height: 160px;   */
+    padding: 20px;
+}
