@@ -1,7 +1,6 @@
 @font-face {
     font-family: 'Arial-MT';
     src: url("./assets/fonts/Arial-MT.woff");
-    /* Путь к файлу со шрифтом */
 }
 
 * {
@@ -41,8 +40,6 @@ body {
     justify-content: space-between;
     align-items: flex-start;
     width: 100%;
-    /* height: 30vh; */
-    /* min-height: 220px;   */
     padding: 20px;
 }
 
@@ -53,8 +50,6 @@ body {
     justify-content: center;
     align-items: center;
     width: 100%;
-    /* height: 40vh; */
-    /* min-height: 260px;   */
     gap: 20px;;
 }
 
@@ -153,20 +148,19 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 20px;
 }
 
-.deck-container .deck,
-.deck-container .last-card {
+.card-active {
+    min-width: 174px;
+    min-height: 254px;
+    background-position: center;
     background-size: cover;
-    /* height: 190px;
-    width: 130px; */
+    border: 2px solid rgba(213, 120, 0, 1);
 }
 
-.deck-container .deck,
-.deck-container .last-card {
-    background-size: cover;
-    /* height: 190px;
-    width: 130px; */
+.text-active {
+    color: rgb(188, 19, 19);
 }
 
 .footer {
@@ -175,7 +169,5 @@ body {
     justify-content: flex-end;
     align-items: center;
     width: 100%;
-    /* height: 30vh; */
-    /* min-height: 160px;   */
     padding: 20px;
 }
