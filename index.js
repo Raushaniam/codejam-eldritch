@@ -173,6 +173,13 @@ deck.onclick = function () {
         const path = oneStageArr.splice(number, 1);
         lastСard.style.backgroundImage = `url(${path})`;
         lastСard.classList.add('card-active');
+        if(lastСard.style.backgroundImage.includes('green') && greenOne.textContent >= '0') {
+            greenOne.textContent = greenOne.textContent - '1';
+        } else if(lastСard.style.backgroundImage.includes('brown') &&  brownOne.textContent >= '0') {
+            brownOne.textContent = brownOne.textContent - '1';
+        } else if(lastСard.style.backgroundImage.includes('blue') &&  blueOne.textContent >= '0') {
+            blueOne.textContent = blueOne.textContent - '1';
+        }
         if(oneStageArr.length === 0){
             text1.classList.add('text-active');
         }
@@ -181,6 +188,13 @@ deck.onclick = function () {
         const path = secondStageArr.splice(number, 1);
         lastСard.style.backgroundImage = `url(${path})`;
         lastСard.classList.add('card-active');
+        if(lastСard.style.backgroundImage.includes('green') && greenTwo.textContent >= '0') {
+            greenTwo.textContent = greenTwo.textContent - '1';
+        } else if(lastСard.style.backgroundImage.includes('brown') &&  brownTwo.textContent >= '0') {
+            brownTwo.textContent = brownTwo.textContent - '1';
+        } else if(lastСard.style.backgroundImage.includes('blue') &&  blueTwo.textContent >= '0') {
+            blueTwo.textContent = blueTwo.textContent - '1';
+        }
         if(secondStageArr.length === 0){
             text2.classList.add('text-active');
         }
@@ -189,6 +203,13 @@ deck.onclick = function () {
         const path = thirdStageArr.splice(number, 1);
         lastСard.style.backgroundImage = `url(${path})`;
         lastСard.classList.add('card-active');
+        if(lastСard.style.backgroundImage.includes('green') && greenThree.textContent >= '0') {
+            greenThree.textContent = greenThree.textContent - '1';
+        } else if(lastСard.style.backgroundImage.includes('brown') &&  brownThree.textContent >= '0') {
+            brownThree.textContent = brownThree.textContent - '1';
+        } else if(lastСard.style.backgroundImage.includes('blue') &&  blueThree.textContent >= '0') {
+            blueThree.textContent = blueThree.textContent - '1';
+        }
         if(thirdStageArr.length === 0){
             text3.classList.add('text-active');
         }
